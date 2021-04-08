@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap");
+html, body {
+  font: 100% Mulish, sans-serif;
+  color: #000000;
+  background-color: #f1efed;
+}
+
+ul {
+  list-style-type: none;
+  font: 120% Mulish, sans-serif;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 18px;
+  text-decoration: none;
+  transition: 0.4s all;
+}
+
+li a:hover:not(.active) {
+  background-color: #e4e4e4;
+}
+
+#yourMoment {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#capture {
+  width: 100%;
+  height: 100%;
+  margin: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#capture h1 {
+  font-size: 32px;
+  font-weight: 200;
+}
+#capture #canvas {
+  display: none;
+}
+#capture #photo-btn {
+  border: 2px solid #000000;
+  background-color: #f1efed;
+  color: black;
+  padding: 14px 28px;
+  font-size: 18px;
+  cursor: pointer;
+  border-color: #000000;
+  color: #000000;
+  margin: 12px;
+  font: 100% Mulish, sans-serif;
+  transition: 0.4s all;
+}
+#capture #photo-btn:hover {
+  background-color: #000000;
+  color: #f1efed;
+}
+#capture #photo-btn:focus {
+  outline: none;
+}
+
+#speech {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#speech #textbox {
+  border: 2px solid #000000;
+  background-color: #f1efed;
+  font: 100% Mulish, sans-serif;
+  color: #000000;
+}
+#speech #textbox:focus {
+  outline: none;
+}
+#speech ::placeholder {
+  color: #000000;
+  opacity: 0.5;
+  text-align: center;
+}
+
+#speechButton #start-btn {
+  border: 2px solid #000000;
+  background-color: #f1efed;
+  color: black;
+  padding: 14px 28px;
+  font-size: 18px;
+  cursor: pointer;
+  border-color: #000000;
+  color: #000000;
+  margin: 12px;
+  font: 100% Mulish, sans-serif;
+  transition: 0.4s all;
+}
+#speechButton #start-btn:hover {
+  background-color: rgba(30, 147, 0, 0.4);
+}
+#speechButton #start-btn:focus {
+  outline: none;
+}
+#speechButton #stop-btn {
+  border: 2px solid #000000;
+  background-color: #f1efed;
+  color: black;
+  padding: 14px 28px;
+  font-size: 18px;
+  cursor: pointer;
+  border-color: #000000;
+  color: #000000;
+  margin: 12px;
+  font: 100% Mulish, sans-serif;
+  transition: 0.4s all;
+}
+#speechButton #stop-btn:hover {
+  background-color: rgba(205, 1, 1, 0.4);
+}
+#speechButton #stop-btn:focus {
+  outline: none;
+}
+#speechButton #instructions {
+  font-size: 18px;
+  text-align: center;
+}
+
+#savePostBtn {
+  height: 80px;
+  width: 450px;
+  border: 2px solid #000000;
+  background-color: #f1efed;
+  color: black;
+  padding: 14px 28px;
+  cursor: pointer;
+  border-color: #000000;
+  color: #000000;
+  margin: 28px;
+  font: 140% Mulish, sans-serif;
+  font-weight: bold;
+  transition: 0.4s all;
+}
+
+#savePostBtn:hover {
+  background-color: #000000;
+  color: #f1efed;
+}
+
+#savePostBtn:focus {
+  outline: none;
+}
+
+#saveMoment {
+  width: 100%;
+  height: 100%;
+}
+#saveMoment #saveMomentComp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=index.css.map */

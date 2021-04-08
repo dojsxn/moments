@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+
+$font-stack: Mulish, sans-serif;
+
+$primary-color: #000000;
+$secondary-color:#f1efed;
+$third-color:#e4e4e4;
+
+html,body{
+	font: 100% $font-stack;
+	color: $primary-color;
+	background-color: $secondary-color;
+}
+
+ul {
+  	list-style-type: none;
+ 	font: 120% $font-stack;
+}
+
+li {
+  	float: left;
+}
+
+li a {
+	display: block;
+	color: $primary-color;
+	text-align: center;
+	padding: 14px 18px;
+	text-decoration: none;
+	transition: 0.4s all;
+}
+
+li a:hover:not(.active) {
+  	background-color: $third-color;
+}
+
+#yourMoment{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#capture{
+
+	h1{
+		font-size: 32px;
+		font-weight: 200;
+	}
+
+	#canvas{
+		display: none;
+	}
+
+	#photo-btn{
+		border: 2px solid $primary-color;
+ 		background-color: $secondary-color;
+ 		color: black;
+ 		padding: 14px 28px;
+ 		font-size: 18px;
+ 		cursor: pointer;
+		border-color: $primary-color;
+ 		color: $primary-color;
+		margin: 12px;
+		font: 100% $font-stack;
+		transition: 0.4s all;
+	}
+
+	#photo-btn:hover{
+		background-color: $primary-color;
+ 		color: $secondary-color;
+	}
+
+	#photo-btn:focus{
+		outline: none;
+	}
+	width: 100%;
+	height: 100%;
+	margin: 28px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#speech{
+	#textbox{
+		border: 2px solid $primary-color;
+		background-color: $secondary-color;
+		font: 100% $font-stack;
+		color: $primary-color;
+	}
+
+	#textbox:focus{
+		outline: none;
+	}
+
+	::placeholder{
+		color: $primary-color;
+		opacity: 0.5;
+		text-align: center;
+	}
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#speechButton{
+	#start-btn{
+		border: 2px solid $primary-color;
+ 		background-color: $secondary-color;
+ 		color: black;
+ 		padding: 14px 28px;
+ 		font-size: 18px;
+ 		cursor: pointer;
+		border-color: $primary-color;
+ 		color: $primary-color;
+		margin: 12px;
+		font: 100% $font-stack;
+		transition: 0.4s all;
+	}
+
+	#start-btn:hover{
+		background-color: rgba(#1e9300, 0.4);
+	}
+
+	#start-btn:focus{
+		outline: none;
+	}
+
+	#stop-btn{
+		border: 2px solid $primary-color;
+		background-color: $secondary-color;
+		color: black;
+		padding: 14px 28px;
+		font-size: 18px;
+		cursor: pointer;
+		border-color: $primary-color;
+		color: $primary-color;
+		margin: 12px;
+		font: 100% $font-stack;
+		transition: 0.4s all;
+	}
+
+	#stop-btn:hover{
+		background-color: rgba(#cd0101, 0.4);
+	}
+
+	#stop-btn:focus{
+		outline: none;
+	}
+
+	#instructions{
+		font-size: 18px;
+		text-align: center;
+	}
+}
+
+#savePostBtn{
+		height: 80px;
+		width: 450px;
+		border: 2px solid $primary-color;
+		background-color: $secondary-color;
+		color: black;
+		padding: 14px 28px;
+		cursor: pointer;
+		border-color: $primary-color;
+		color: $primary-color;
+		margin: 28px;
+		font: 140% $font-stack;
+		font-weight: bold;
+		transition: 0.4s all;
+}
+
+#savePostBtn:hover{
+		background-color: $primary-color;
+		color: $secondary-color;
+}
+
+#savePostBtn:focus{
+		outline: none;
+}
+
+#saveMoment{
+	#saveMomentComp{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	width: 100%;
+	height: 100%;
+}

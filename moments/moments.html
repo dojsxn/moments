@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>moments</title>
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="icon" type="image/png" sizes="32x32" href="icon/icon.png">
+	</head>
+	<body>
+	<nav>
+		<ul>
+    		<li><a href="">Home</a></li>
+    		<li><a href="">Your Moments</a></li>
+    		<li><a href="">Contact</a></li>
+  		</ul>
+	</nav>
+
+	<div id="yourMoment">
+
+		<div id="capture">
+			<h1 id="intro-text">Welcome to moments, begin by capturing an image.</h1>
+			<video id="video" class="video"  autoplay playsinline></video>
+			<canvas id="canvas" width="641" height="480"></canvas>
+			<button id="photo-btn" class="photo-btn">Take Photo</button>
+		</div>
+
+		<div id="speech">
+			<div id="speechBox">
+				<textarea id="textbox" rows="24" cols="77" placeholder="Let's hear your story, start below."></textarea>
+			</div>
+
+			<div id="speechButton">
+				<button id="start-btn" class="btn btn-danger btn-block">
+					Start Recording
+				</button>
+
+				<button id="stop-btn" class="btn btn-danger btn-block">
+					Stop Recording
+				</button>
+
+				<p id="instructions"></p>
+			</div>
+		</div>
+
+	</div>
+
+	<div id="saveMoment">
+		<div id="saveMomentComp">
+			<button id="savePostBtn" class="btn btn-info">Save your moment</button>
+			<h1 id="refresh">Refresh the page to make a new moment!</h1>
+		</div>
+	</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js" integrity="sha256-c3RzsUWg+y2XljunEQS0LqWdQ04X1D3j22fd/8JCAKw=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js" integrity="sha256-FPJJt8nA+xL4RU6/gsriA8p8xAeLGatoyTjldvQKGdE=" crossorigin="anonymous"></script>
+	</body>
+</html>
